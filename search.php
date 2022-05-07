@@ -29,10 +29,10 @@
     <script src="js/func.js"></script>
     <script type="text/javascript">
         function search(){
-            location.href= 'http://localhost/dashboard/jpb_search/search.php?job='+ document.getElementById('dimm').value.replace(' ','-').replace(/\W+/g, '-') + '&orde=ORDER-BY-date-ASC&place='+ document.getElementById('dovm').value;
+            location.href= 'http://localhost/dashboard/job_search/search.php?job='+ document.getElementById('dimm').value.replace(' ','-').replace(/\W+/g, '-') + '&orde=ORDER-BY-date-ASC&place='+ document.getElementById('dovm').value;
         }
         function orderBy(){
-            location.href= 'http://localhost/dashboard/jpb_search/search.php?job=<?php echo str_replace(" ", "-",$job)?>&orde='+document.getElementById('orde').value+'&place=<?php echo str_replace(" ", "-", $place)?>';
+            location.href= 'http://localhost/dashboard/job_search/search.php?job=<?php echo str_replace(" ", "-",$job)?>&orde='+document.getElementById('orde').value+'&place=<?php echo str_replace(" ", "-", $place)?>';
         }
     </script>
 
